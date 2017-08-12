@@ -16,5 +16,5 @@ Default button (you can use any type of html tag):
 <span class="button button-danger">Danger</span>
 ```
 ```
-![Alt text](img.jpg "Example ")
+![ScreenShot](https://github.com/Bartimeys/buttons/blob/master/img.png)
 ```
