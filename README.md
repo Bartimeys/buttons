@@ -16,5 +16,5 @@ Default button (you can use any type of html tag):
 <span class="button button-danger">Danger</span>
 ```
 ```
-<img src="img.png" alt="example"/>
+<img src="./img.png" alt="example"/>
 ```
