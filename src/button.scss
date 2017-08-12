@@ -1,0 +1,158 @@
+@import 'variables';
+@import 'mixins';
+
+.button {
+  font: $defaultFontSize sans-serif;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  outline: none;
+  line-height: 1;
+  color: $defaultTextColor;
+  min-width: $defaultWidth;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: $borderRadius;
+  text-align: center;
+  border: $borderDefault;
+  transition: opacity $transitionType;
+
+  @include setButtonPaddings($defaultWidth);
+  @include setButtonColor($defaultBackgroundColor);
+
+  @include setButtonColor($brandBackgroundColor);
+  @include setActive($brandBackgroundColor);
+}
+
+.button-danger {
+  @include setButtonColor($dangerBackgroundColor);
+  @include setActive($dangerBackgroundColor);
+}
+
+.button-default {
+  @include setButtonColor($defaultBackgroundColor);
+  @include setActive($defaultBackgroundColor);
+  color: $blackTexrColor;
+}
+
+.button-success {
+  @include setButtonColor($successBackgroundColor);
+  @include setActive($successBackgroundColor);
+}
+
+
+.button.button-success.button-inverted {
+  @include setHover($successBackgroundColor);
+  color:$successBackgroundColor
+}
+.button.button-danger.button-inverted {
+  @include setHover($dangerBackgroundColor);
+  color:$dangerBackgroundColor
+}
+.button.button-warning.button-inverted {
+  @include setHover($warningBackgroundColor);
+  color:$warningBackgroundColor
+}
+.button.button-inverted{
+  @include setHover($brandBackgroundColor);
+  color:$brandBackgroundColor
+}
+.button.button-default.button-inverted{
+  @include setHover($defaultBackgroundColor);
+  color: $blackTexrColor;
+}
+.button-warning {
+  @include setButtonColor($warningBackgroundColor);
+}
+
+.button-m {
+  @include setButtonSize($middleWidth, $middleFontSize);
+}
+
+.button-s {
+  @include setButtonSize($minWidth, $smallFontSize);
+}
+.button-xs {
+  @include setButtonSize($xsWidth, $xsmallFontSize);
+}
+.button-no-min-with{
+  min-width: inherit;
+}
+.padding-l-r-0{
+  padding-left: 0;
+  padding-right: 0;
+}
+.button-loading {
+  @include detouchMouseEvents();
+  &:before, &:after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  &:before {
+    content: $loadTxt;
+    text-align: center;
+    animation: loading $loadAnimate;
+    z-index: 1;
+  }
+  &:after {
+    content: '';
+    height: 100%;
+    top: 0;
+    border-radius: $borderRadius;
+  }
+}
+
+.button-disabled {
+  opacity: 0.3;
+  @include detouchMouseEvents();
+}
+
+.button-inverted {
+  &:hover {
+    background-color: $defaultTextColor;
+  }
+  background-color: $defaultTextColor;
+  &:after {
+    background-color: $defaultTextColor;
+  }
+}
+
+.button-full-width {
+  display: block;
+  min-width: 100%;
+}
+
+.button-no-padding {
+  padding-left: 0;
+  padding-right: 0;
+  min-width: auto;
+}
+
+.button {
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    top: 1px;
+  }
+}
+
+.button__icon:before {
+  margin: 0 5px;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}

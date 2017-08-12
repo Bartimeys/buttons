@@ -1,0 +1,43 @@
+@mixin setButtonColor($color){
+  background-color: $color;
+  border-color: $color;
+  &:after{
+    background-color: $color
+  }
+  &.button{
+
+  }
+  &.inverted{
+    border-color: $color;
+    background-color: $defaultTextColor;
+    color: $color;
+    border-radius: $borderRadius;
+  }
+}
+@mixin setHover($color){
+  &:hover {
+    background-color: $color;
+    color: $defaultTextColor;
+  }
+}
+@mixin setActive($color){
+  &:active {
+    background-color: $color;
+    color: $defaultTextColor;
+  }
+}
+
+@mixin  setButtonPaddings($width){
+  padding: ceil($width / 15) ceil($width / 7);
+}
+
+@mixin  setButtonSize($buttonWidth, $fontSize){
+  min-width: $buttonWidth;
+  font-size: $fontSize;
+@include setButtonPaddings($buttonWidth);
+}
+
+@mixin  detouchMouseEvents(){
+  pointer-events: none;
+  user-select: none;
+}

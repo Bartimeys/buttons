@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons module</title>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build/button.css">
+    <!-- preview styles -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            color: #404040;
+        }
+
+        h3 {
+            margin: 10px;
+            border-bottom: 1px solid black;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0 10px;
+        }
+
+        ul h4 {
+            margin: 5px 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li .button:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        ul li div:not(.button) {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<h3>Buttons</h3>
+<ul>
+    <li>
+        <h4>Colors & States</h4>
+        <div>
+            <a href="#" class="button">Brand</a>
+            <a href="#" class="button button-default">Neutral</a>
+            <button class="button button-success">Success</button>
+            <div class="button button-warning">Warning</div>
+            <span class="button button-danger">Danger</span>
+        </div>
+        <div>
+            <a href="#" class="button">,</a>
+            <a href="#" class="button button-default">,</a>
+            <button class="button button-success">,</button>
+            <div class="button button-warning">,</div>
+            <span class="button button-danger">,</span>
+        </div>
+        <div>
+            <a href="#" class="button button-disabled">Disabled</a>
+            <a href="#" class="button button-default button-disabled">Disabled</a>
+            <button class="button button-success button-disabled">Disabled</button>
+            <div class="button button-warning button-disabled">Disabled</div>
+            <span class="button button-danger button-disabled">Disabled</span>
+        </div>
+        <div>
+            <a href="#" class="button button-inverted">Inverted</a>
+            <a href="#" class="button button-default button-inverted">Inverted</a>
+            <div class="button button-success button-inverted">Inverted</div>
+            <span class="button button-warning button-inverted">Inverted</span>
+            <button class="button button-danger button-inverted">Inverted</button>
+        </div>
+        <div>
+            <a href="#" class="button button-inverted">Inv Dis</a>
+            <a href="#" class="button button-default button-inverted">Inv Dis</a>
+            <div class="button button-success button-inverted">Inv Dis</div>
+            <span class="button button-warning button-inverted">Inv Dis</span>
+            <button class="button button-danger button-inverted">Inv Dis</button>
+        </div>
+        <div>
+            <a href="#" class="button button-loading">,</a>
+            <a href="#" class="button button-default button-loading">,</a>
+            <button class="button button-success button-loading">,</button>
+            <span class="button button-danger button-loading">,</span>
+            <div class="button button-warning button-loading">,</div>
+        </div>
+
+    </li>
+    <li>
+        <h4>Sizes & Icons</h4>
+        <div>
+            <a href="#" class="button">L Button</a>
+            <div class="button button-m">M Button</div>
+            <button class="button button-s">S Button</button>
+            <button class="button button-xs">XS Button</button>
+        </div>
+        <div>
+            <a href="#" class="button"><i class="button-icon fa fa-linux"></i>Icon L</a>
+            <div class="button button-m"><i class="button-icon fa fa-linux"></i>Icon L</div>
+            <button class="button button-s"><i class="button-icon fa fa-linux"></i>Icon L</button>
+            <button class="button button-xs"><i class="button-icon fa fa-linux"></i>Icon L</button>
+        </div>
+        <div>
+            <a href="#" class="button">Icon R<i class="button-icon fa fa-linux"></i></a>
+            <div class="button button-m">Icon R<i class="button-icon fa fa-linux"></i></div>
+            <button class="button button-s">Icon R<i class="button-icon fa fa-linux"></i></button>
+            <button class="button button-xs">Icon R<i class="button-icon fa fa-linux"></i></button>
+        </div>
+        <div>
+            <a href="#" class="button"><i class="button-icon fa fa-linux"></i>Icon Both<i
+                    class="button-icon fa fa-linux"></i></a>
+            <div class="button button-m"><i class="button-icon fa fa-linux"></i>Icon Both<i
+                    class="button-icon fa fa-linux"></i></div>
+            <button class="button button-s"><i class="button-icon fa fa-linux"></i>Icon Both<i
+                    class="button-icon fa fa-linux"></i></button>
+            <button class="button button-xs"><i class="button-icon fa fa-linux"></i>Icon Both<i
+                    class="button-icon fa fa-linux"></i></button>
+        </div>
+        <div>
+            <a href="#" class="button"><i class="button-icon fa fa-linux"></i></a>
+            <div class="button button-m"><i class="button-icon fa fa-linux"></i></div>
+            <button class="button button-s"><i class="button-icon fa fa-linux"></i></button>
+            <button class="button button-xs"><i class="button-icon fa fa-linux"></i></button>
+        </div>
+    </li>
+    <li>
+        <h4>Other modifiers</h4>
+        <div>
+            <a href="#" class="button button-disabled">Short</a>
+            <span>Disabled button</span>
+        </div>
+        <div>
+            <a href="#" class="button">Short</a>
+            <span>Same as disabled but without changing styles</span>
+        </div>
+        <div>
+            <a href="#" class="button button-no-min-with">Short</a>
+            <span>No min-width</span>
+        </div>
+        <div>
+            <div class="button button-no-padding">Long title for unpadded</div>
+            <span>No left right paddings</span>
+        </div>
+        <div>
+            <a href="#" class="button button-full-width">Full Width</a>
+            <span>Block level full width</span>
+        </div>
+    </li>
+</ul>
+</body>
+</html>

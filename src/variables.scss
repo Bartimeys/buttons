@@ -1,0 +1,27 @@
+/*font size*/
+$defaultFontSize: 14px;
+$middleFontSize: 13px;
+$smallFontSize: 12px;
+$xsmallFontSize: 11px;
+
+ /*Color styles*/
+$blackTexrColor : #333;
+$defaultTextColor : #fff;
+$defaultBackgroundColor : #e6e6e6;
+$brandBackgroundColor : #13A4E9;
+$dangerBackgroundColor : #F15A00;
+$successBackgroundColor : #70B837;
+$warningBackgroundColor : #E59800;
+
+/*Width*/
+$defaultWidth: 120px;
+$middleWidth: 90px;
+$minWidth: 60px;
+$xsWidth: 40px;
+
+/*Another style*/
+$transitionType : 300ms ease-out;
+$loadAnimate :  2s infinite ease-in-out;
+$borderRadius: 3px;
+$borderDefault : 1px solid;
+$loadTxt: 'Load...';
