@@ -15,6 +15,4 @@ Default button (you can use any type of html tag):
 <div class="button button-warning">Warning</div>
 <span class="button button-danger">Danger</span>
 ```
-```
 ![ScreenShot](https://github.com/Bartimeys/buttons/blob/master/img.png)
-```
